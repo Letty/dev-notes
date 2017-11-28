@@ -81,16 +81,19 @@ WantedBy=multi-user.target
 * reboot or start service `sudo systemctl start <yourprojectname>.service`
 * `systemctl status <yourprojectname>.service`
 
+## Lets encrypt
 
-## TODO
-
-* add lets encrypt to nginx geraffel
+* if you used the ec2 ip -> change the server_name field in nginx config to domain name
+* follow instructions at certbot website [1]
+* restart nginx
+* horray!
 
 ## Improvements
 
 * use github/gitlab with deploy key on aws
 
 ## Useful Links
+[1] - https://certbot.eff.org/#ubuntuxenial-nginx
 [] - https://www.youtube.com/watch?v=kDRRtPO0YPA
 [] - https://stackoverflow.com/questions/44818451/setup-gunicorn-to-run-with-systemd
 [] - http://bartsimons.me/gunicorn-as-a-systemd-service/
