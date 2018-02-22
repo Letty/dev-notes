@@ -2,7 +2,7 @@
 
 ## DNB Database Server
 
-* [Installing MySQL Server] (https://www.digitalocean.com/community/tutorials/how-to-install-mysql-on-ubuntu-16-04)
+* [Installing MySQL Server](https://www.digitalocean.com/community/tutorials/how-to-install-mysql-on-ubuntu-16-04)
     - no remote root login. The database is read only for the application server 
 * Upload database dump `scp dump.sql user@server:/path/to/dir`
 * connect to mysql with user root `mysql -u root -p`
