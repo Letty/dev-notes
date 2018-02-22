@@ -88,9 +88,10 @@ WantedBy=multi-user.target
 * restart nginx
 * horray!
 
-## Improvements
-
-* use github/gitlab with deploy key on aws
+## Eventlet
+* optimisation of gunicorn with asynchron workers
+* pip install eventlet
+* `gunicorn --workers 3 --worker-class eventlet --timeout 120 --threads 3`
 
 ## Useful Links
 [1] - https://certbot.eff.org/#ubuntuxenial-nginx
